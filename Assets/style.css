@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+  
+  :root {
+    --dark: #13293d;
+    --light: #fff;
+    --navlink-color: #b9c6ae;
+  }
+  
+    
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  
+  .container {
+      margin-top: 0px;
+      position: relative;
+      text-align: center;
+      color: white;
+       }
+ .bottom-right {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        color: whitesmoke;
+        font-style: oblique;
+        font-size: 50px;
+        
+  }
+
+  .column {
+      position: relative;
+      margin-left: 0px;
+      display: inline;
+      float: left;
+      width: 20%;
+      height: inherit;
+      font-size: 30px;
+      text-align: left;
+      border-right: 1px solid black;
+      white-space: wrap;
+      overflow: hidden;
+      text-overflow:unset;
+  }
+  
+  ol{
+      margin-top: 20px;
+      border-spacing: 50px 0;
+      padding: 50px 10px;
+
+  }
+  .main{
+      float: right ;
+      padding: inherit ;
+      position: absolute;
+      clear: both;
+      margin-left: 20%;
+      top: 53%;
+      font-size: 20px;
+      line-height: 2rem;
+      font-style: oblique;
+  }
+  
+  ul{
+      margin-top: 15%;
+      padding-right: 10px;
+  }
+  h1 {
+    font-size: 200%;
+    color: rgb(159, 133, 184);
+  }
+  
+  h2 {
+    margin: 2% 0;
+    font-size: 250%;
+  }
+  
+  a[href*='.css']::after {
+    content: '📝';
+    display: inline-block;
+    margin-left: 3px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 320px;
+  }
+  
+  nav a {
+    background-color: unset;
+    color: var(--navlink-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+    
+  main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: 2% auto;
+  }
+  
+    footer {
+        position: fixed;
+        bottom:0;
+        width:100%;
+        height:1px;  
+        justify-content: center;
+        padding: 2%;
+        background-color: var(--dark);
+        color: var(--light);
+        text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+    .main {
+        top: 40%;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+
+
+  

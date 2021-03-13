@@ -21,13 +21,12 @@ body {
   }
   
   .container {
-      margin-top: 0px;
       position: relative;
       text-align: center;
       color: white;
        }
  .bottom-right {
-        position: absolute;
+        position: fixed;
         bottom: 5%;
         right: 5%;
         color: whitesmoke;
@@ -35,13 +34,51 @@ body {
         font-size: 50px;
         
   }
+.wrapper{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.img-div{
+  height:420px;
+background-image: url('https://images.unsplash.com/photo-1495420047114-9f6ef7fc0cbc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');  
+background-position: center;
+background-repeat: no-repeat;
+width: 50%;
+margin: 6px;
+border: solid 8px rgb(150, 173, 173);
+
+}
+#img-one {
+  height: 500px;
+  width: 700px;
+  background-image: url(./portfolio.jpg);
+  border: solid 8px rgb(150, 173, 173);
+}
+.img-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.img-div#img-one{
+  height:240px;
+  width:100%;
+
+}
+.img-row{
+  flex-direction: row;
+
+  justify-content: space-between;
+}
 
   .column {
       position: relative;
       margin-left: 0px;
-      display: inline;
-      float: left;
+      display: inline-flex;
+      flex-direction:column;
+      justify-content: flex-start;
       width: 20%;
+      align-items: flex-start;
       height: inherit;
       font-size: 30px;
       text-align: left;
@@ -50,15 +87,29 @@ body {
       overflow: hidden;
       text-overflow:unset;
   }
+  .col-2{
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
   
-  ol{
-      margin-top: 20px;
-      border-spacing: 50px 0;
-      padding: 50px 10px;
+  }
+  .col-2{
+    padding:4%;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
   }
+  
+  span{
+      
+        }
   .main{
-      float: right ;
+      /* float: right ;
       padding: inherit ;
       position: absolute;
       clear: both;
@@ -67,11 +118,14 @@ body {
       font-size: 20px;
       line-height: 2rem;
       font-style: oblique;
-  }
-  
+  } */
+  }  
   ul{
       margin-top: 15%;
       padding-right: 10px;
+      list-style: none;
+      
+}
   }
   h1 {
     font-size: 200%;

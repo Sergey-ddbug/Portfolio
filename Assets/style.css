@@ -78,8 +78,6 @@ header {
   border: solid 8px rgb(150, 173, 173);
 }
 
-#img-three {
-}
 .img-container {
   display: flex;
   flex-direction: column;
